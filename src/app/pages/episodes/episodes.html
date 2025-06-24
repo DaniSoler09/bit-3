@@ -8,7 +8,7 @@
             </div>
                 <h3 class="sub-title">Episodes</h3>
             <div class="Episodes-list">
-                    @for (episode of results; let i = $index; track episode){
+                    @for (episode of results; track episode){
                     <div>
                         <div>
                             <P>Name: {{episode.name}}</P>
@@ -19,7 +19,7 @@
                                     Characters
                                 </button>
                                 </p>
-                                <div style="min-height: 120px;">
+                                <div style="min-height: 70px;">
                                 <div class="collapse collapse-horizontal" id="collapseWidthExample">
                                     <div class="card card-body" style="width: 300px;">
                                     @for (character of episode.characters; track character){
