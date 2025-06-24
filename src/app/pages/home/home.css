@@ -1,0 +1,50 @@
+.inside-cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.front-img{
+    width: 350px;
+    height: 450px;
+}
+.front-img img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.text-intro{
+    color: #ffffff;
+    margin-left: 20px;
+    margin-top: 40px;
+    font-size: 20px;
+}
+.pics-img{
+    width: 300px;
+}
+.carousel-cont{
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 70px;
+    padding-bottom: 5px;
+}
+.box-carousel{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.title-c{
+    text-align: center;
+    margin-top: 125px;
+    color: #ffffff;
+    font-size: 40px;
+}
+.carousel-inner{
+    border-radius: 20px;
+}

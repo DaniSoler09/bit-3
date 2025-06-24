@@ -1,0 +1,22 @@
+.all-characters{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 30px;
+    gap: 15px;
+}
+.details{
+    color: #ffffff;
+    margin-top: 22px;
+}
+.sub-title{
+    margin-left: 30px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    color: #ffffff;
+}
+.txt-bold{
+    font-weight: 700;
+}
+.pics{
+    border-radius: 5px;
+}

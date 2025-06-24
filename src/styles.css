@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+.background-img{
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background: linear-gradient(135deg, red, green, blue);
+}
+.content-cont{
+    width: 75%;
+    height: auto;
+    margin: auto;
+    border: 2px solid #ffffff;
+    border-radius: 40px;
+    background-color: #000000;
+}
+.content-cont h1{
+    text-align: center;
+    margin-top: 120px;
+    color: #ffffff;
+}

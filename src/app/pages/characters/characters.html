@@ -1,0 +1,36 @@
+<main class="background-img">
+    <div class="content-cont">
+        <h1>Rick & Morty</h1>
+        <h2 class="sub-title">Characters</h2>
+        <div>
+            <div class="all-characters">
+                @for (personaje of results; track personaje){
+                    <div>
+                        <img class="pics" src="{{personaje.image}}" alt="">
+                    </div>
+                 <div>
+                    <p class="details"><span class="txt-bold">Name:</span> {{personaje.name}} </p>
+                    <p class="details"><span class="txt-bold">Status:</span> {{personaje.status}}</p>
+                    <p class="details"><span class="txt-bold">Species:</span> {{personaje.species}}</p>
+                    <p class="details"><span class="txt-bold">gender:</span> {{personaje.gender}}</p>
+                    <p class="details"><span class="txt-bold">Planet:</span> {{personaje.origin.name}}</p>
+                    <p>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                            Episodes
+                        </button>
+                        </p>
+                        <div style="min-height: 120px;">
+                        <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                            <div class="card card-body" style="width: 300px;">
+                            @for (episode of personaje.episode; track episode){
+                                <p>{{episode}}</p>
+                            }
+                            </div>
+                        </div>
+                        </div>
+                </div>
+                }
+            </div>
+        </div>
+    </div>
+</main>

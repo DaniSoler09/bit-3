@@ -1,0 +1,40 @@
+<main class="background-img">
+    <div class="content-cont">
+        <h1>Rick & Morty</h1>
+        <h2 class="sub-title">Episodes</h2>
+        <div>
+            <div class="rick-morty">
+                <img src="../../../assets/rick-morty.jpg" alt="">
+            </div>
+                <h3 class="sub-title">Episodes</h3>
+            <div class="Episodes-list">
+                    @for (episode of results; let i = $index; track episode){
+                    <div>
+                        <div>
+                            <P>Name: {{episode.name}}</P>
+                            <P>Air-date: {{episode.air_date}}</P>
+                            <P>Episode: {{episode.episode}}</P>
+                            <p>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                                    Characters
+                                </button>
+                                </p>
+                                <div style="min-height: 120px;">
+                                <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                                    <div class="card card-body" style="width: 300px;">
+                                    @for (character of episode.characters; track character){
+                                <p style="color: black;">{{character}}</p>
+                            }
+                                    </div>
+                                </div>
+                                </div>
+                        </div>
+                        <hr>
+                    </div>
+                }
+            </div>
+                
+        </div>
+    </div>
+<main>
+
