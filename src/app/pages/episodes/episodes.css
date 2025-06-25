@@ -25,8 +25,17 @@
     color: #ffffff;
 }
 .sub-title{
-        margin-left: 50px;
+    margin-left: 50px;
     margin-bottom: 40px;
     margin-top: 40px;
     color: #ffffff;
 }
+.txt-bold{
+    font-weight: 700;
+}
+
+@media screen and (max-width: 750px) {
+    .Episodes-list{
+        display: inline-block;
+    }
+      }

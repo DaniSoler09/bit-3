@@ -48,8 +48,17 @@
 .carousel-inner{
     border-radius: 20px;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 750px) {
         .inside-cont{
-            display: flex;
+            display: inline-block;
+        }
+        .box-carousel{
+            display: block;
+        }
+        .title-c{
+            margin-bottom: 40px;
+        }
+        .front-img{
+            margin: auto;
         }
       }
